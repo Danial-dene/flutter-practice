@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -7,7 +8,7 @@ void main() => runApp(MaterialApp(
       centerTitle: true,
       backgroundColor: Colors.indigo,
     ),
-    body: Center(
+    body: /*Center(
       child: Text('Hello ninjas',
       style: TextStyle(
         fontSize: 20.0,
@@ -17,6 +18,21 @@ void main() => runApp(MaterialApp(
         fontFamily: 'IndieFlower',
       ),
       ),
+    ),*//*Container(
+      padding: EdgeInsets.all(20.0),
+      color: Colors.grey[400],
+      child: Text('There you go'),*/
+
+    Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Text('Hello world'),
+        TextButton(
+            onPressed: (){}, child: Text('Click me'))
+      ],
+
+
     ),
     floatingActionButton: FloatingActionButton(
       onPressed: (){
